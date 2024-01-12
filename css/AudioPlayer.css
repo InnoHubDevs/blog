@@ -1,7 +1,15 @@
 /* Music Player v0.1 CSS */
 /*<![CDATA[*/
 #musicPlayer {
-  color: var (--bodyC)
+  position: absolute;
+  top: 50%;
+  right: 0;
+  left: 0;
+  max-width: 430px;
+  width: 100%;
+  height: 100px;
+  margin: -4px auto;
+  color: var (--bodyC);
   font-family: var(--fontBa);
 }
 
