@@ -1,4 +1,4 @@
-let app = document.getElementById("musicPlayer");
+var app = document.getElementById("musicPlayer");
 app.innerHTML =`
 <div class="player">
         <div class="player-track" :class="{'active': isTimerPlaying}">
