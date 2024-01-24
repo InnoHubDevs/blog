@@ -1,0 +1,276 @@
+/* Tool general styles */
+#color-contrast {
+  background: #fff;
+  box-shadow: 0 0 1rem rgba(0,0,0,0.25);
+  border-radius: 2px;
+  width: 500px;
+  margin: auto auto;
+  box-sizing: border-box;
+  padding: 2rem;
+  /*position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);*/
+}
+
+/* character */
+#jill {
+  width: 250px;
+  height: 250px;
+  margin: auto auto;
+  border-radius: 100%;
+}
+/* SVG */
+.st0{
+  clip-path:url(#MisterThree_1);
+  fill:#4A7FBD;
+}
+.st1{
+  clip-path:url(#MisterThree_1);
+}
+.st2{
+  fill:#F9BF8F;
+}
+.st3{
+  fill:#F38B67;
+}
+.st4{
+  fill:#EDF9F9;
+}
+.st5{
+  fill:#3E65AE;
+}
+.st6{
+  fill:#315095;
+}
+.st7{
+  fill:#DEF1F8;
+}
+.st8{
+  fill:#FFDBC0;
+}
+.st9{
+  opacity:0.15;
+  fill:#A45757;
+  enable-background:new
+}
+.st10{
+  fill:#512A3B;
+}
+.st11{
+  fill:#613648;
+}
+.st12{
+  fill:#723E55;
+}
+.st13{
+  fill:url(#MisterThree_13_1);
+}
+.st14{
+  fill:url(#MisterThree_14_1);
+  fill-opacity:0;
+}
+.st15{
+  opacity:6.363636e-02;
+  fill:url(#MisterThree_3_1);
+  enable-background:new
+}
+.st16{
+  opacity:0.1273;
+  fill:url(#MisterThree_4_1);
+  enable-background:new
+}
+.st17{
+  opacity:0.1909;
+  fill:url(#MisterThree_5_1);
+  enable-background:new
+}
+.st18{
+  opacity:0.2545;
+  fill:url(#MisterThree_6_1);
+  enable-background:new
+}
+.st19{
+  opacity:0.3182;
+  fill:url(#MisterThree_7_1);
+  enable-background:new
+}
+.st20{
+  opacity:0.3818;
+  fill:url(#MisterThree_8_1);
+  enable-background:new
+}
+.st21{
+  opacity:0.4455;
+  fill:url(#MisterThree_9_1);
+  enable-background:new
+}
+.st22{
+  opacity:0.5091;
+  fill:url(#MisterThree_10_1);
+  enable-background:new
+}
+.st23{
+  opacity:0.5727;
+  fill:url(#MisterThree_11_1);
+  enable-background:new
+}
+.st24{
+  opacity:0.6364;
+  fill:url(#MisterThree_12_1);
+  enable-background:new
+}
+.st25{
+  opacity:0.7;
+  fill:url(MisterThree_15);
+  enable-background:new
+}
+.st26{
+  opacity:0.3;
+  fill:#FFFFFF;
+}
+.st27{
+  opacity:0.6;fill:#E76266;
+}
+.st28{
+  fill:#9B4335;
+}
+.st29{
+  fill:#EC5E76;
+}
+.st30{
+  fill:url(#Mulut_4_1);
+}
+.st31{
+  fill:#FFFFFF;
+}
+.st32{
+  fill:#3A1B2B;
+}
+.st33{
+  fill:#422030;
+}
+.st34{
+  display:none;
+}
+/* boxes */
+#boxes {
+  display: flex;
+  margin-top: 1.5rem;
+}
+
+#boxes > div {
+  flex: 1;
+  text-align: center;
+  background: #081;
+  color: white;
+  padding: 0.5rem 0;
+  margin-left: 10px;
+  border-radius: 3px;
+  transition: background 0.5s;
+  position: relative;
+}
+
+#boxes > div::after {
+  content: "✓ Pass";
+  display: block;
+  position: absolute;
+  color: #081;
+  text-align:center;
+  width: 100%;
+  margin-top: 10px;
+}
+
+#boxes > div.fail {
+  background: #d32;
+}
+
+#boxes > div.fail::after {
+  content: "✕ Fail";
+  color: #d32;
+}
+
+#boxes > div:first-child {
+  margin-left: 0;
+}
+
+#boxes span:first-child {
+  font-size: 0.75em;
+  display: inline-block;
+  margin-bottom: 0.5em;
+}
+
+/* demo */
+#sample-text {
+  margin: 2.5rem 0 1.6rem 0;
+  padding: 1rem;
+  background: #fff;
+  color: #000;
+  text-align: center;
+  font-size: 20px;
+  border-radius: 2px;
+}
+
+/* sliders */
+#bars {
+  display: flex;
+  flex-direction: row;
+}
+
+#bars > div {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+#bars > div:first-child {
+  margin-right: 0.5rem;
+}
+
+#bars > div:last-child {
+  margin-left: 0.5rem;
+}
+
+#bars > div > div {
+  display: flex;
+  margin-bottom: 0.5rem;
+}
+
+#bars label {
+  display: inline-block;
+  color: white;
+  width: 2rem;
+  height: 2rem;
+  line-height: 2rem;
+  font-size: 1rem;
+  text-align: center;
+  border-radius: 2px;
+  box-sizing: border-box;
+}
+
+label.red { background: #d32; }
+label.green { background: #081; }
+label.blue { background: #26e; }
+
+#bars input[type="range"] {
+  flex: 1;
+}
+#bars input[type="number"] {
+  text-align: center;
+  width: 3rem;
+  border-radius: 2px;
+  border: 1px solid #ccc;
+  font-size: 0.75rem;
+  height: 2rem;
+  box-sizing:border-box;
+  line-height: 2rem;
+}
+#bars input[type="text"] {
+  border-radius: 2px;
+  border: 1px solid #ccc;
+  text-align: center;
+  font-size: 1rem;
+  height: 2rem;
+  box-sizing:border-box;
+  line-height: 2rem;
+}
